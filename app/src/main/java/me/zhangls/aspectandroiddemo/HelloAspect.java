@@ -9,6 +9,6 @@ public class HelloAspect {
 
     @Around("execution(String me.zhangls.aspectandroiddemo.MainActivity.sayHello())")
     public String around(ProceedingJoinPoint pj) throws Throwable {
-        return "Hello, @Aspect1111";
+        return "Hello, @Aspect";
     }
 }

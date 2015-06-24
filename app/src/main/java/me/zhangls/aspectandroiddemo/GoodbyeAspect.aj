@@ -7,9 +7,9 @@ import org.aspectj.lang.annotation.Aspect;
 
 public aspect GoodbyeAspect {
 
-    pointcut sayGoodbye() : execution(String com.uphyca.gradle.android.aspectj.MyActivity.sayGoodbye());
+    pointcut sayGoodbye() : execution(String me.zhangls.aspectandroiddemo.MainActivity.sayGoodbye());
 
     String around() : sayGoodbye() {
-        return "Goodbye, Aspect";
+        return "Goodbye, @Aspect";
     }
 }
